@@ -1,0 +1,19 @@
+body{
+    background-color:cyan;
+}
+
+h1{
+    color:red;
+    text-decoration:underline;
+}
+
+h3{
+    color:rebeccapurple;
+}
+
+#platform{
+    display:flex;
+    flex-direction: column;
+    font-family: 'Roboto Mono', monospace;
+    font-size:50px;
+}

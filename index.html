@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Emotion recognizer : Project 105 </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Face recognition web app</h1>
+        <br>
+        <h3>This model can identify your emotions by your images</h3>
+        <br>
+    <div style="display:flex; flex-direction:row; justify-content:space-between;">
+        <div>
+            <div id="camera" style="border:2px red solid; height:400px; width:500px;"></div>
+            <button class="btn btn-info" onclick="take_snapshot();">Capture Image</button>
+        </div>
+        <div>
+            <div id="result" style="border:2px red solid; height:400px; width:500px;"></div>
+            <button class="btn btn-success" onclick="check();">Identify Image</button>
+        </div>
+    </div>
+    <br><br>
+    <div id="platform">
+        <div>Emotion: <label id="emotion"></label></div>
+        <div>Accuracy: <label id="accuracy"></label></div>
+    </div>
+    </center>
+</body>
+<script src="main.js"></script>
+</html>
+
+<!-- https://teachablemachine.withgoogle.com/models/jt4txZ6rT/ -->
